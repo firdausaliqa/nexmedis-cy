@@ -4,8 +4,8 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://magento.softwaretestingboard.com/',
     env: {
-      envemail: 'mutia@gmail.com', //environment variable
-      envpassw: 'KucingLucu123' //environment variable
+      envemail: 'fird@nexmedis.com', //environment variable
+      envpassw: 'Nexmedis1' //environment variable
     },
     defaultCommandTimeout: 5432,
     viewportHeight: 670,
@@ -15,4 +15,5 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  video: true,
 });

@@ -43,6 +43,7 @@ describe('Verify Login Functionality on Magento', () => {
 
   it('Login with empty password', () => {
     cy.fixture('login').then((data) => {
+      cy.wait(3000);
       loginPage.inputEmail(data.validEmail);
       loginPage.clickLoginButton();
       loginPage.verifyPassRequiredMsg(data.requiredPassMsg);
@@ -51,6 +52,7 @@ describe('Verify Login Functionality on Magento', () => {
 
   it('Login with empty email', () => {
     cy.fixture('login').then((data) => {
+      cy.wait(3000);
       loginPage.inputPassword(data.validPassword);
       loginPage.clickLoginButton();
       loginPage.verifyEmailRequiredMsg(data.requiredEmailMsg);
